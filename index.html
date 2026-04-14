@@ -72,26 +72,14 @@
 
         .logo-container {
             display: flex;
-            flex-direction: column;
             align-items: center;
             z-index: 1001; /* Stay above mobile menu */
         }
 
-        .logo-container img {
-            height: 60px;
-        }
-        
-        .logo-text {
-            font-size: 24px;
-            letter-spacing: 4px;
-            color: var(--primary-green);
-            font-weight: 300;
-        }
-
-        .tagline {
-            font-size: 10px;
-            letter-spacing: 2px;
-            color: var(--primary-green);
+        .brand-logo {
+            height: 45px; /* Adjust height as needed */
+            width: auto;
+            cursor: pointer;
         }
 
         /* Hamburger Menu Icon */
@@ -518,8 +506,9 @@
 
     <header>
         <div class="logo-container">
-            <div class="logo-text">NIMORA</div>
-            <div class="tagline">WHERE PURITY MEETS RADIANCE</div>
+            <a href="#home">
+                <img src="NIMORA-03.svg" alt="NIMORA Logo" class="brand-logo">
+            </a>
         </div>
         
         <div class="menu-toggle" id="mobile-menu">
